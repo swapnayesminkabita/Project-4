@@ -1,0 +1,689 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ecommerce Site</title>
+    <!-- bootstrap css link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <!-- bootstrap icon link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <!-- custom css link -->
+    <link rel="stylesheet" href="link/styles.css">
+  </head>
+  <body>
+
+    <!-- top navbar start -->
+    <nav class="nav bg-dark">
+  <a class="nav-link active text-light" aria-current="page" href="#"><i class="bi bi-envelope-at-fill me-2"></i>mstswapnayesminkabita@gmail.com</a>
+  <span class="sep text-light mt-2">|</span>
+   <a class="nav-link active text-light" aria-current="page" href="#"><i class="bi bi-telephone-fill me-2"></i>+880 1757386595</a>
+   <span class="sep text-light mt-2">|</span>
+   <div class="mt-2">
+    <span><i class="bi bi-clock-fill text-light mt-2 ms-3"></i><span id="date" class="text-light ms-2"></span><span id="time" class="text-light ms-2"></span></span>
+    </div>
+   <ul class="nav ms-auto">
+  <li class="nav-item">
+    <a class="nav-link active text-light" aria-current="page" href="#"><i class="bi bi-heart-fill me-2"></i>Wishlist</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link active text-light" aria-current="page" href="login.html"><i class="bi bi-box-arrow-in-right me-2"></i>Log In</a>
+  </li>
+   <li class="nav-item">
+    <a class="nav-link active text-light" aria-current="page" href="signup.html"><i class="bi bi-person-plus me-2"></i>Rejister</a>
+  </li>
+</ul>
+</nav>
+<!-- top navbar end -->
+
+<!-- navbar start -->
+
+<nav class="navbar navbar-expand-lg bg-body-tertiary bg-danger-subtle">
+  <div class="container-fluid">
+    <a class="navbar-brand d-flex align-items-center gap-2" href="#">
+    <img class="w-25" src="photos/logo.jpg" alt="logo">
+
+    <span class="fs-4 fw-semibold text-dark"
+          style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+        Click
+        <span class="fw-bold text-primary"
+              style="font-family: 'Courier New', Courier, monospace;">
+            Shop
+        </span>
+    </span>
+</a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active pe-3 ps- fw-bold" aria-current="page" href="index.html">Home</a>
+        </li>
+         <li class="nav-item">
+          <a class="nav-link active pe-3 ps-3 fw-bold" aria-current="page" href="Products.html">Prodcut</a>
+        </li>
+         <li class="nav-item">
+          <a class="nav-link active pe-3 ps-3 fw-bold" aria-current="page" href="cart.html">Cart</a>
+        </li>
+         <li class="nav-item">
+          <a class="nav-link active pe-3 ps-3 fw-bold" aria-current="page" href="login.html">Log In</a>
+        </li>
+         <li class="nav-item">
+          <a class="nav-link active pe-3 ps-3 fw-bold" aria-current="page" href="signup.html">Sign Up</a>
+        </li>
+          </ul>
+        </li>
+    </div>
+  </div>
+</nav>
+
+ <!-- navbar end -->
+
+ <!-- banner start -->
+  
+  <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="photos/s1.png" class="d-block w-100" alt="banner-photo">
+    </div>
+    <div class="carousel-item">
+      <img src="photos/s3.jpg" class="d-block w-100" alt="banner-photo">
+    </div>
+    <div class="carousel-item">
+      <img src="photos/s4.jpg" class="d-block w-100" alt="banner-photo">
+    </div>
+    <div class="carousel-item">
+      <img src="photos/s5.jpg" class="d-block w-100" alt="banner-photo">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+  <!-- banner end -->
+
+     <!-- best selling products start -->
+
+   <div class="container mb-5">
+      <h1 class="text-center mt-5 mb-5">Best Selling Products</h1>
+
+      <div class="row row-cols-1 row-cols-md-4 g-4">
+        <div class="col">
+          <div class="card">
+            <div class="product-img">
+              <img src="photos/p15.png" class="card-img-top" alt="..." />
+            </div>
+            <div class="card-body">
+              <div class="d-flex justify-content-between">
+                <span class="badge rounded-pill bg-primary h-25 ms-3">Best</span>
+                 <p class="fw-bold me-3">&#2547;150</p>
+              </div>
+              <a href="details.html" class="text-decoration-none"
+                ><h5 class="card-title text-center text-dark mb-3">
+                  Serum
+                </h5></a
+              >
+              <div class="text-center">
+                <a href="details.html"
+                  ><button type="button" class="btn btn-outline-primary">
+                   Details
+                  </button></a
+                >
+                <a href="cart.html"
+                  ><button type="button" class="btn btn-primary text-light">
+                    Add to Cart
+                  </button></a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <div class="product-img">
+              <img src="photos/p14.png" class="card-img-top" alt="..." />
+            </div>
+            <div class="card-body">
+              <div class="d-flex justify-content-between">
+                <span class="badge rounded-pill bg-primary h-25 ms-3">Best</span>
+                 <p class="fw-bold me-3">&#2547;150</p>
+              </div>
+              <a href="details.html" class="text-decoration-none"
+                ><h5 class="card-title text-center text-dark mb-3">
+                  Beauty Combo
+                </h5></a
+              >
+              <div class="text-center">
+                <a href="details.html"
+                  ><button type="button" class="btn btn-outline-primary">
+                    Details
+                  </button></a
+                >
+                <a href="cart.html"
+                  ><button type="button" class="btn btn-primary text-light">
+                    Add to Cart
+                  </button></a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <div class="product-img">
+              <img src="photos/p13.png" class="card-img-top" alt="..." />
+            </div>
+            <div class="card-body">
+              <div class="d-flex justify-content-between">
+                <span class="badge rounded-pill bg-primary h-25 ms-3">Best</span>
+                 <p class="fw-bold me-3">&#2547;150</p>
+              </div>
+              <a href="details.html" class="text-decoration-none"
+                ><h5 class="card-title text-center text-dark mb-3">
+                  T-Shirt
+                </h5></a
+              >
+              <div class="text-center">
+                <a href="details.html"
+                  ><button type="button" class="btn btn-outline-primary">
+                    Details
+                  </button></a
+                >
+                <a href="cart.html"
+                  ><button type="button" class="btn btn-primary text-light">
+                    Add to Cart
+                  </button></a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <div class="product-img">
+              <img src="photos/p12.png" class="card-img-top" alt="..." />
+            </div>
+            <div class="card-body">
+              <div class="d-flex justify-content-between">
+                <span class="badge rounded-pill bg-primary h-25 ms-3">Best</span>
+                 <p class="fw-bold me-3">&#2547;150</p>
+              </div>
+              <a href="details.html" class="text-decoration-none"
+                ><h5 class="card-title text-center text-dark mb-3">
+                  Laptop
+                </h5></a
+              >
+              <div class="text-center">
+                <a href="details.html"
+                  ><button type="button" class="btn btn-outline-primary">
+                   Details
+                  </button></a
+                >
+                <a href="cart.html"
+                  ><button type="button" class="btn btn-primary text-light">
+                    Add to Cart
+                  </button></a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+       <div class="col">
+          <div class="card">
+            <div class="product-img">
+              <img src="photos/p11.jpg" class="card-img-top" alt="..." />
+            </div>
+            <div class="card-body">
+              <div class="d-flex justify-content-between">
+                <span class="badge rounded-pill bg-primary h-25 ms-3">Best</span>
+                 <p class="fw-bold me-3">&#2547;150</p>
+              </div>
+              <a href="details.html" class="text-decoration-none"
+                ><h5 class="card-title text-center text-dark mb-3">
+                  Tab
+                </h5></a
+              >
+              <div class="text-center">
+                <a href="details.html"
+                  ><button type="button" class="btn btn-outline-primary">
+                    Details
+                  </button></a
+                >
+                <a href="cart.html"
+                  ><button type="button" class="btn btn-primary text-light">
+                    Add to Cart
+                  </button></a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <div class="product-img">
+              <img src="photos/p10.png" class="card-img-top" alt="..." />
+            </div>
+            <div class="card-body">
+              <div class="d-flex justify-content-between">
+                <span class="badge rounded-pill bg-primary h-25 ms-3">Best</span>
+                 <p class="fw-bold me-3">&#2547;150</p>
+              </div>
+              <a href="details.html" class="text-decoration-none"
+                ><h5 class="card-title text-center text-dark mb-3">
+                  Power Bank
+                </h5></a
+              >
+              <div class="text-center">
+                <a href="details.html"
+                  ><button type="button" class="btn btn-outline-primary">
+                    Details
+                  </button></a
+                >
+                <a href="cart.html"
+                  ><button type="button" class="btn btn-primary text-light">
+                    Add to Cart
+                  </button></a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <div class="product-img">
+              <img src="photos/p9.png" class="card-img-top" alt="..." />
+            </div>
+            <div class="card-body">
+              <div class="d-flex justify-content-between">
+                <span class="badge rounded-pill bg-primary h-25 ms-3">Best</span>
+                 <p class="fw-bold me-3">&#2547;150</p>
+              </div>
+              <a href="details.html" class="text-decoration-none"
+                ><h5 class="card-title text-center text-dark mb-3">
+                  Shirt
+                </h5></a
+              >
+              <div class="text-center">
+                <a href="details.html"
+                  ><button type="button" class="btn btn-outline-primary">
+                    Details
+                  </button></a
+                >
+                <a href="cart.html"
+                  ><button type="button" class="btn btn-primary text-light">
+                    Add to Cart
+                  </button></a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <div class="product-img">
+              <img src="photos/p8.png" class="card-img-top" alt="..." />
+            </div>
+            <div class="card-body">
+              <div class="d-flex justify-content-between">
+                <span class="badge rounded-pill bg-primary h-25 ms-3">Best</span>
+                 <p class="fw-bold me-3">&#2547;150</p>
+              </div>
+              <a href="details.html" class="text-decoration-none"
+                ><h5 class="card-title text-center text-dark mb-3">
+                  Sunscreen
+                </h5></a
+              >
+              <div class="text-center">
+                <a href="details.html"
+                  ><button type="button" class="btn btn-outline-primary">
+                    Details
+                  </button></a
+                >
+                <a href="cart.html"
+                  ><button type="button" class="btn btn-primary text-light">
+                    Add to Cart
+                  </button></a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- best selling products end -->
+
+         <!-- featured products start -->
+
+   <div class="container mb-5">
+      <h1 class="text-center mt-5 mb-5">Featured Product</h1>
+
+      <div class="row row-cols-1 row-cols-md-4 g-4">
+        <div class="col">
+          <div class="card">
+            <div class="product-img">
+              <img src="photos/p1.jpg" class="card-img-top" alt="..." />
+            </div>
+            <div class="card-body">
+              <div class="d-flex justify-content-between">
+                <span class="badge rounded-pill bg-primary h-25 ms-3">Featured</span>
+                 <p class="fw-bold me-3">&#2547;150</p>
+              </div>
+              <a href="details.html" class="text-decoration-none"
+                ><h5 class="card-title text-center text-dark mb-3">
+                  Shoes
+                </h5></a
+              >
+              <div class="text-center">
+                <a href="details.html"
+                  ><button type="button" class="btn btn-outline-primary">
+                    Details
+                  </button></a
+                >
+                <a href="cart.html"
+                  ><button type="button" class="btn btn-primary text-light">
+                    Add to Cart
+                  </button></a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <div class="product-img">
+              <img src="photos/p2.png" class="card-img-top" alt="..." />
+            </div>
+            <div class="card-body">
+              <div class="d-flex justify-content-between">
+                <span class="badge rounded-pill bg-primary h-25 ms-3">Featured</span>
+                 <p class="fw-bold me-3">&#2547;150</p>
+              </div>
+              <a href="details.html" class="text-decoration-none"
+                ><h5 class="card-title text-center text-dark mb-3">
+                  Perfume
+                </h5></a
+              >
+              <div class="text-center">
+                <a href="details.html"
+                  ><button type="button" class="btn btn-outline-primary">
+                    Details
+                  </button></a
+                >
+                <a href="cart.html"
+                  ><button type="button" class="btn btn-primary text-light">
+                    Add to Cart
+                  </button></a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <div class="product-img">
+              <img src="photos/p3.png" class="card-img-top" alt="..." />
+            </div>
+            <div class="card-body">
+              <div class="d-flex justify-content-between">
+                <span class="badge rounded-pill bg-primary h-25 ms-3">Featured</span>
+                 <p class="fw-bold me-3">&#2547;150</p>
+              </div>
+              <a href="details.html" class="text-decoration-none"
+                ><h5 class="card-title text-center text-dark mb-3">
+                  Crop-Top
+                </h5></a
+              >
+              <div class="text-center">
+                <a href="details.html"
+                  ><button type="button" class="btn btn-outline-primary">
+                    Details
+                  </button></a
+                >
+                <a href="cart.html"
+                  ><button type="button" class="btn btn-primary text-light">
+                    Add to Cart
+                  </button></a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <div class="product-img">
+              <img src="photos/p4.png" class="card-img-top" alt="..." />
+            </div>
+            <div class="card-body">
+              <div class="d-flex justify-content-between">
+                <span class="badge rounded-pill bg-primary h-25 ms-3">Featured</span>
+                 <p class="fw-bold me-3">&#2547;150</p>
+              </div>
+              <a href="details.html" class="text-decoration-none"
+                ><h5 class="card-title text-center text-dark mb-3">
+                  Hand Bag
+                </h5></a
+              >
+              <div class="text-center">
+                <a href="details.html"
+                  ><button type="button" class="btn btn-outline-primary">
+                  Details
+                  </button></a
+                >
+                <a href="cart.html"
+                  ><button type="button" class="btn btn-primary text-light">
+                    Add to Cart
+                  </button></a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+       <div class="col">
+          <div class="card">
+            <div class="product-img">
+              <img src="photos/p5.png" class="card-img-top" alt="..." />
+            </div>
+            <div class="card-body">
+              <div class="d-flex justify-content-between">
+                <span class="badge rounded-pill bg-primary h-25 ms-3">Featured</span>
+                 <p class="fw-bold me-3">&#2547;150</p>
+              </div>
+              <a href="details.html" class="text-decoration-none"
+                ><h5 class="card-title text-center text-dark mb-3">
+                  Bag
+                </h5></a
+              >
+              <div class="text-center">
+                <a href="details.html"
+                  ><button type="button" class="btn btn-outline-primary">
+                    Details
+                  </button></a
+                >
+                <a href="cart.html"
+                  ><button type="button" class="btn btn-primary text-light">
+                    Add to Cart
+                  </button></a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <div class="product-img">
+              <img src="photos/p6.png" class="card-img-top" alt="..." />
+            </div>
+            <div class="card-body">
+              <div class="d-flex justify-content-between">
+                <span class="badge rounded-pill bg-primary h-25 ms-3">Featured</span>
+                 <p class="fw-bold me-3">&#2547;150</p>
+              </div>
+              <a href="details.html" class="text-decoration-none"
+                ><h5 class="card-title text-center text-dark mb-3">
+                  Head Phone
+                </h5></a
+              >
+              <div class="text-center">
+                <a href="details.html"
+                  ><button type="button" class="btn btn-outline-primary">
+                    Details
+                  </button></a
+                >
+                <a href="cart.html"
+                  ><button type="button" class="btn btn-primary text-light">
+                    Add to Cart
+                  </button></a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <div class="product-img">
+              <img src="photos/p7.png" class="card-img-top" alt="..." />
+            </div>
+            <div class="card-body">
+              <div class="d-flex justify-content-between">
+                <span class="badge rounded-pill bg-primary h-25 ms-3">Featured</span>
+                 <p class="fw-bold me-3">&#2547;150</p>
+              </div>
+              <a href="details.html" class="text-decoration-none"
+                ><h5 class="card-title text-center text-dark mb-3">
+                  Smart Watch
+                </h5></a
+              >
+              <div class="text-center">
+                <a href="details.html"
+                  ><button type="button" class="btn btn-outline-primary">
+                    Details
+                  </button></a
+                >
+                <a href="cart.html"
+                  ><button type="button" class="btn btn-primary text-light">
+                    Add to Cart
+                  </button></a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <div class="product-img">
+              <img src="photos/p8.png" class="card-img-top" alt="..." />
+            </div>
+            <div class="card-body">
+              <div class="d-flex justify-content-between">
+                <span class="badge rounded-pill bg-primary h-25 ms-3">Featured</span>
+                 <p class="fw-bold me-3">&#2547;150</p>
+              </div>
+              <a href="details.html" class="text-decoration-none"
+                ><h5 class="card-title text-center text-dark mb-3">
+                  Sunscreen
+                </h5></a
+              >
+              <div class="text-center">
+                <a href="details.html"
+                  ><button type="button" class="btn btn-outline-primary">
+                   Details
+                  </button></a
+                >
+                <a href="cart.html"
+                  ><button type="button" class="btn btn-primary text-light">
+                    Add to Cart
+                  </button></a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- featured products end -->
+   <!-- big footer start -->
+  <footer class="footer-big pt-5 pb-4 mt-5 bg-body-tertiary bg-danger-subtle">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-md-4">
+           <a class="navbar-brand d-flex align-items-center gap-2" href="#">
+    <img class="w-25" src="photos/logo.jpg" alt="logo">
+
+    <span class="fs-4 fw-semibold text-dark"
+          style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+        Click
+        <span class="fw-bold text-primary"
+              style="font-family: 'Courier New', Courier, monospace;">
+            Shop
+        </span>
+    </span>
+</a>
+          <p class="mb-2 text-dark-50">
+           Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores perspiciatis nihil explicabos corrupti sed repellendus.
+          </p>
+          <div class="d-flex gap-3">
+            <h6>Social Icon</h6>
+            <a href="#" aria-label="facebook"><i class="bi bi-facebook"></i></a>
+            <a href="#" aria-label="youtube"><i class="bi bi-youtube"></i></a>
+            <a href="#" aria-label="instagram"><i class="bi bi-instagram"></i></a>
+             <a href="#" aria-label="twitter"><i class="bi bi-twitter"></i></a>
+              <a href="#" aria-label="linkedin"><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+
+        <div class="col-md-2">
+          <h6 class="fw-bold">Pages</h6>
+          <ul class="list-unstyled small">
+            <li class="mb-2"><a class="text-decoration-none text-dark fw-semibold" href="index.html">Home</a></li>
+            <li class="mb-2"><a class="text-decoration-none text-dark fw-semibold" href="products.html">Product</a></li>
+            <li class="mb-2"><a class="text-decoration-none text-dark fw-semibold" href="details.html">Product Detail</a></li>
+            <li class="mb-2"><a class="text-decoration-none text-dark fw-semibold" href="cart.html">Cart</a></li>
+            <li class="mb-2"><a class="text-decoration-none text-dark fw-semibold" href="signup.html">Signup</a></li>
+            <li class="mb-2"><a class="text-decoration-none text-dark fw-semibold" href="login.html">Login</a></li>
+          </ul>
+        </div>
+
+        <div class="col-md-3">
+          <h6 class="fw-bold">Customer Service</h6>
+          <ul class="list-unstyled small">
+            <li class="mb-2"><a class="text-decoration-none text-dark fw-semibold" href="#">Help Center</a></li>
+            <li class="mb-2"><a class="text-decoration-none text-dark fw-semibold" href="#">Return Policy</a></li>
+            <li class="mb-2"><a class="text-decoration-none text-dark fw-semibold" href="#">Shipping Info</a></li>
+            <li class="mb-2"><a class="text-decoration-none text-dark fw-semibold" href="#">Terms & Privacy</a></li>
+          </ul>
+        </div>
+
+        <div class="col-md-3">
+          <h6 class="fw-bold">Newsletter</h6>
+          <p class="small text-dark-50 mb-2 fw-semibold">Get offers and updates.</p>
+          <form class="d-flex gap-2">
+            <input class="form-control form-control-sm" type="email" placeholder="Email">
+            <button class="btn btn-primary btn-sm" type="button">Subscribe</button>
+          </form>
+          <div class="mt-3 small text-dark-50">
+            <div><i class="bi bi-geo-alt-fill"></i> Dhaka, Jamuna Park</div>
+            <div><i class="bi bi-telephone-fill"></i> +880 1757386595</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+   <!-- big footer end -->
+  <!-- footer start -->
+  <div class="footer-bottom py-3 bg-dark">
+      <div class="text-light text-center">© 2026 Click Shop. All rights reserved.</div>
+  </div>
+  <!-- footer end -->
+<!-- custom js link -->
+    <script src="link/main.js"></script>
+    <!-- bootstrap js link -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  </body>
+</html>

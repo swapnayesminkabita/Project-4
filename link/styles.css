@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.nav-link{
+    font-size: large;
+     
+    transition: 0.3s;
+    
+}
+.nav-link:hover{
+    background-color: black;
+    border-radius: 10px;
+    color: #fff !important;
+}
+.card{
+    transition: 0.3s;
+}
+.card:hover{
+    margin-top: -3px;
+    box-shadow: 0 0 5px 5px rgb(223, 222, 222);
+}
+.product-img{
+  
+    overflow: hidden;
+}
+.product-img img{
+      transition: transform 0.3s ease-in-out;
+}
+.product-img img:hover{
+    transform: scale(1.1);
+}
+.zoom-area{
+    overflow: hidden;
+}
+.zoom-area img{
+    transition: transform 0.3s ease-in-out;
+    border-radius: 10px;
+}
+.zoom-area img:hover{
+    transform: scale(1.1);
+     border-radius: 10px;
+}

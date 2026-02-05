@@ -1,0 +1,276 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ecommerce Site</title>
+    <!-- bootstrap css link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <!-- bootstrap icon link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <!-- custom css link -->
+    <link rel="stylesheet" href="link/styles.css">
+  </head>
+  <body>
+
+    <!-- top navbar start -->
+    <nav class="nav bg-dark">
+  <a class="nav-link active text-light" aria-current="page" href="#"><i class="bi bi-envelope-at-fill me-2"></i>mstswapnayesminkabita@gmail.com</a>
+  <span class="sep text-light mt-2">|</span>
+   <a class="nav-link active text-light" aria-current="page" href="#"><i class="bi bi-telephone-fill me-2"></i>+880 1757386595</a>
+   <span class="sep text-light mt-2">|</span>
+   <div class="mt-2">
+    <span><i class="bi bi-clock-fill text-light mt-2 ms-3"></i><span id="date" class="text-light ms-2"></span><span id="time" class="text-light ms-2"></span></span>
+    </div>
+   <ul class="nav ms-auto">
+  <li class="nav-item">
+    <a class="nav-link active text-light" aria-current="page" href="#"><i class="bi bi-heart-fill me-2"></i>Wishlist</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link active text-light" aria-current="page" href="login.html"><i class="bi bi-box-arrow-in-right me-2"></i>Log In</a>
+  </li>
+   <li class="nav-item">
+    <a class="nav-link active text-light" aria-current="page" href="signup.html"><i class="bi bi-person-plus me-2"></i>Rejister</a>
+  </li>
+</ul>
+</nav>
+<!-- top navbar end -->
+
+<!-- navbar start -->
+
+<nav class="navbar navbar-expand-lg bg-body-tertiary bg-danger-subtle">
+  <div class="container-fluid">
+    <a class="navbar-brand d-flex align-items-center gap-2" href="#">
+    <img class="w-25" src="photos/logo.jpg" alt="logo">
+
+    <span class="fs-4 fw-semibold text-dark"
+          style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+        Click
+        <span class="fw-bold text-primary"
+              style="font-family: 'Courier New', Courier, monospace;">
+            Shop
+        </span>
+    </span>
+</a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active pe-3 ps- fw-bold" aria-current="page" href="index.html">Home</a>
+        </li>
+         <li class="nav-item">
+          <a class="nav-link active pe-3 ps-3 fw-bold" aria-current="page" href="Products.html">Prodcut</a>
+        </li>
+         <li class="nav-item">
+          <a class="nav-link active pe-3 ps-3 fw-bold" aria-current="page" href="cart.html">Cart</a>
+        </li>
+         <li class="nav-item">
+          <a class="nav-link active pe-3 ps-3 fw-bold" aria-current="page" href="login.html">Log In</a>
+        </li>
+         <li class="nav-item">
+          <a class="nav-link active pe-3 ps-3 fw-bold" aria-current="page" href="signup.html">Sign Up</a>
+        </li>
+          </ul>
+        </li>
+    </div>
+  </div>
+</nav>
+
+
+ <!-- navbar end -->
+
+  <!-- breadcrumb start -->
+
+  <nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+    <li class="breadcrumb-item active" aria-current="page">Cart</li>
+  </ol>
+</nav>
+
+
+  <!-- breadcrumb end -->
+
+  <!-- cart start -->
+
+<main class="container py-4">
+    <div class="row g-4">
+      <!-- Cart Product List Section -->
+      <div class="col-lg-8">
+        <div class="d-flex flex-wrap justify-content-between align-items-center gap-2 mb-2">
+          <h2 class="section-title mb-0">Shopping Cart</h2>
+        </div>
+
+        <div class="table-responsive border rounded-4">
+          <table class="table mb-0">
+            <thead class="table-light">
+              <tr>
+                <th>Item</th>
+                <th>Product</th>
+                <th class="text-end">Price</th>
+                <th>Qty</th>
+                <th class="text-end">Total</th>
+                <th class="text-end">Action</th>
+              </tr>
+            </thead>
+            <tbody id="cartTableBody">
+              <tr>
+                <td style="width:90px"><img src="photos/p12.png" alt="Laptop" class="img-fluid rounded"></td>
+                <td>
+                  <div class="fw-bold">Laptop</div>
+                  <div class="text-muted small">Electronics • Dell</div>
+                </td>
+                <td class="text-end">৳150</td>
+                <td style="width:140px">
+                  <input type="number" class="form-control form-control-sm" value="1" disabled>
+                </td>
+                <td class="text-end fw-bold">৳150</td>
+                <td class="text-end" style="width:120px">
+                  <button class="btn btn-danger btn-sm" type="button" disabled>Remove</button>
+                </td>
+              </tr>
+<tr>
+                <td style="width:90px"><img src="photos/p2.png" alt="Running Shoes" class="img-fluid rounded"></td>
+                <td>
+                  <div class="fw-bold">Perfume</div>
+                  <div class="text-muted small">Fashion • Naika</div>
+                </td>
+                <td class="text-end">৳150</td>
+                <td style="width:140px">
+                  <input type="number" class="form-control form-control-sm" value="5" disabled>
+                </td>
+                <td class="text-end fw-bold">৳750</td>
+                <td class="text-end" style="width:120px">
+                  <button class="btn btn-danger btn-sm" type="button" disabled>Remove</button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- Cart Total Summery + Coupon Section -->
+      <div class="col-lg-4">
+        <div class="sidebar-card p-3 rounded-4 mb-3">
+          <h6 class="fw-bold mb-3">Cart Total Summary</h6>
+          <div class="d-flex justify-content-between mb-2">
+            <span class="text-muted">Subtotal</span>
+            <span class="fw-semibold" id="sumSubTotal">৳900</span>
+          </div>
+          <div class="d-flex justify-content-between mb-2">
+            <span class="text-muted">Shipping</span>
+            <span class="fw-semibold" id="sumShipping">৳0</span>
+          </div>
+          <div class="d-flex justify-content-between mb-2">
+            <span class="text-muted">Discount</span>
+            <span class="fw-semibold" id="sumDiscount">৳0</span>
+          </div>
+          <hr>
+          <div class="d-flex justify-content-between">
+            <span class="fw-bold">Grand Total</span>
+            <span class="fw-bold text-primary" id="sumGrand">৳900</span>
+          </div>
+
+          <button class="btn btn-primary w-100 mt-3" type="button">
+            Proceed to Checkout
+          </button>
+        </div>
+
+        <!-- Coupon Section -->
+        <div class="sidebar-card p-3 rounded-4">
+          <h6 class="fw-bold mb-3">Coupon</h6>
+          <form id="couponForm" class="d-flex gap-2" data-demo-form="coupon" novalidate>
+            <input id="couponCode" class="form-control form-control-sm" placeholder="Enter coupon code" required>
+            <button class="btn btn-outline-primary btn-sm" type="submit">Apply</button>
+          </form>
+          <div id="couponDiscount" class="alert alert-info d-none mt-3 mb-0 small" data-discount="0">--</div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+
+  <!-- cart end -->
+
+
+   <!-- Big Footer Section -->
+  <footer class="footer-big pt-5 pb-4 mt-5 bg-body-tertiary bg-danger-subtle">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-md-4">
+           <a class="navbar-brand d-flex align-items-center gap-2" href="#">
+    <img class="w-25" src="photos/logo.jpg" alt="logo">
+
+    <span class="fs-4 fw-semibold text-dark"
+          style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+        Click
+        <span class="fw-bold text-primary"
+              style="font-family: 'Courier New', Courier, monospace;">
+            Shop
+        </span>
+    </span>
+</a>
+          <p class="mb-2 text-dark-50">
+           Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores perspiciatis nihil explicabos corrupti sed repellendus.
+          </p>
+          <div class="d-flex gap-3">
+            <h6>Social Icon</h6>
+            <a href="#" aria-label="facebook"><i class="bi bi-facebook"></i></a>
+            <a href="#" aria-label="youtube"><i class="bi bi-youtube"></i></a>
+            <a href="#" aria-label="instagram"><i class="bi bi-instagram"></i></a>
+             <a href="#" aria-label="twitter"><i class="bi bi-twitter"></i></a>
+              <a href="#" aria-label="linkedin"><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+
+        <div class="col-md-2">
+          <h6 class="fw-bold">Pages</h6>
+          <ul class="list-unstyled small">
+            <li class="mb-2"><a class="text-decoration-none text-dark fw-semibold" href="index.html">Home</a></li>
+            <li class="mb-2"><a class="text-decoration-none text-dark fw-semibold" href="products.html">Product</a></li>
+            <li class="mb-2"><a class="text-decoration-none text-dark fw-semibold" href="details.html">Product Detail</a></li>
+            <li class="mb-2"><a class="text-decoration-none text-dark fw-semibold" href="cart.html">Cart</a></li>
+            <li class="mb-2"><a class="text-decoration-none text-dark fw-semibold" href="signup.html">Signup</a></li>
+            <li class="mb-2"><a class="text-decoration-none text-dark fw-semibold" href="login.html">Login</a></li>
+          </ul>
+        </div>
+
+        <div class="col-md-3">
+          <h6 class="fw-bold">Customer Service</h6>
+          <ul class="list-unstyled small">
+            <li class="mb-2"><a class="text-decoration-none text-dark fw-semibold" href="#">Help Center</a></li>
+            <li class="mb-2"><a class="text-decoration-none text-dark fw-semibold" href="#">Return Policy</a></li>
+            <li class="mb-2"><a class="text-decoration-none text-dark fw-semibold" href="#">Shipping Info</a></li>
+            <li class="mb-2"><a class="text-decoration-none text-dark fw-semibold" href="#">Terms & Privacy</a></li>
+          </ul>
+        </div>
+
+        <div class="col-md-3">
+          <h6 class="fw-bold">Newsletter</h6>
+          <p class="small text-dark-50 mb-2 fw-semibold">Get offers and updates.</p>
+          <form class="d-flex gap-2">
+            <input class="form-control form-control-sm" type="email" placeholder="Email">
+            <button class="btn btn-primary btn-sm" type="button">Subscribe</button>
+          </form>
+          <div class="mt-3 small text-dark-50">
+            <div><i class="bi bi-geo-alt-fill"></i> Dhaka, Jamuna Park</div>
+            <div><i class="bi bi-telephone-fill"></i> +880 1757386595</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Footer Section -->
+  <div class="footer-bottom py-3 bg-dark">
+      <div class="text-light text-center">© 2026 Click Shop. All rights reserved.</div>
+  </div>
+<!-- custom js link -->
+    <script src="link/main.js"></script>
+    <!-- bootstrap js link -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  </body>
+</html>
